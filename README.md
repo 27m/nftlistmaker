@@ -14,7 +14,7 @@ Roadmap:
 
 I plan to utilize a proxy and cache data from the Rolimon's API then fetch from this proxy through the program. 
 
-The program will eventually auto-update / replace your tradebot config's previous NFT list.
+This program will eventually auto-update / replace your tradebot config's previous NFT list.
 
 ## Credits 
 
@@ -25,3 +25,7 @@ The program will eventually auto-update / replace your tradebot config's previou
 ## Disclaimer
 
 I am not responsible for your use of the Rolimon's API. This program should not be used to spam / abuse the API and I thank Rolimon for offering this API as a resource.
+
+## Discord 
+
+Apex Services (Tradebot Configs) - https://discord.gg/ERUYUCZfWJ
