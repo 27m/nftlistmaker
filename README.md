@@ -30,7 +30,9 @@ Apex Services (Tradebot Configs) - https://discord.gg/ERUYUCZfWJ
 
 ## Disclaimer
 
-I am not responsible for your use of the Rolimon's API. This program should not be used to spam / abuse the API and I thank Rolimon for offering this API.
+I am not responsible for your use of the Rolimon's API. This program should not be used to spam / abuse the API.
+
+Thank you Rolimon for offering this API!
 
 ## Credits 
 
