@@ -46,7 +46,6 @@ class NFTMaker(Cmd):
         file = open("nftlist.txt", "w")
         file.write(", ".join(nftlist))
 
-
     def do_quit(self, arg):
         """Quits the program."""
         print("Quitting.")
@@ -59,7 +58,6 @@ class NFTMaker(Cmd):
     def do_credits(self, arg):
         """Displays the credits for this program."""
         print("marshall#4949 - development \nnicK#7461 - giving me details on rolimon's api \nEgg#7087 - concept")
-
 
 
 if __name__ == '__main__':
