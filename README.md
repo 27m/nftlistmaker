@@ -1,6 +1,6 @@
 # NFT List Maker
 
-NFT List Maker is a simple python script used to make NFT Lists for tradebots. (ex. OTB, Gear5 and Vector)
+NFT List Maker is a very simple python script used to make NFT Lists for tradebots. (ex. OTB, Gear5 and Vector)
 
 It relies on the [Rolimon's Item API](https://www.rolimons.com/itemapi/itemdetails) to fetch details of every single limited item on the catalog. 
 
