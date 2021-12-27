@@ -8,6 +8,14 @@ It relies on the [Rolimon's Item API](https://www.rolimons.com/itemapi/itemdetai
 
 A NFT list tells your tradebot what items you don't want to send trades for / accept on. This is crucial for tradebotting so that you don't take losses and accept projected or fluctuating items.
 
+## How to use:
+
+First, you will need to install the requests module.
+
+Open a terminal and run ``pip install requests``
+
+Then run the script either through the terminal or through your file explorer.
+
 ## This program is a work in progress!
 
 Roadmap:
