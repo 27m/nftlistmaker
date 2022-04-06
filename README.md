@@ -37,7 +37,7 @@ Thank you Rolimon for offering this API!
 ## Credits 
 
 + marshall#4949 - development
-+ icK#7461 - giving me details on rolimon's api
++ nicK#7461 - giving me details on rolimon's api
 + Egg#7087 - concept
 + Rolimon#0865 - API
 
