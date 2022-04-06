@@ -40,5 +40,6 @@ Thank you Rolimon for offering this API!
 + nicK#7461 - giving me details on rolimon's api
 + Egg#7087 - concept
 + Rolimon#0865 - API
++ 9ggy for a couple QOL improvements
 
 
