@@ -10,7 +10,7 @@ class NFTMaker(Cmd):
     """Starts the process of making an NFT list."""
     items, nftlist = get('https://www.rolimons.com/itemapi/itemdetails').json()['items'], []
 
-    x = input(Fore.GREEN + "All projecteds? (recommended) | y or n ")
+    x = input(Fore.GREEN + "All projecteds? (recommended) | Y or N ")
     if x.lower() == "y":
       for item in items:
         if items[item][7] == 1:
