@@ -12,7 +12,7 @@ A NFT list tells your tradebot what items you don't want to send trades for / ac
 
 First, you will need to install the requests module.
 
-Open a terminal and run ``pip install requests``
+Open a terminal and run ``pip install -r requirements.txt``
 
 Then run the script either through the terminal or through your file explorer.
 
