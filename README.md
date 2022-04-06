@@ -14,7 +14,9 @@ First, you will need to install the requests module.
 
 Open a terminal and run ``pip install -r requirements.txt``
 
-Then run the script either through the terminal or through your file explorer.
+Then run the script either through Cmder or another terminal. 
+
+# NOTE, Colorama does not natively work on the Windows Terminal. You must install a terminal. Cmder is recommended and is useful anyways.
 
 ## This program is a work in progress!
 
