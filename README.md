@@ -16,7 +16,8 @@ Open a terminal and run ``pip install -r requirements.txt``
 
 Then run the script either through Cmder or another terminal. 
 
-# NOTE, Colorama does not natively work on the Windows Terminal. You must install a terminal. Cmder is recommended and is useful anyways.
+## NOTE, Colorama [does not natively work](https://github.com/tartley/colorama/issues/103) on the Windows Terminal when using input() (which this script relies on). 
+# You must install a terminal. [Cmder](https://cmder.net/) is recommended and has multiple benefits over Windows Terminal.
 
 ## This program is a work in progress!
 
@@ -28,7 +29,7 @@ This program will eventually auto-update / replace your tradebot config's previo
 
 ## Discord 
 
-Apex Services (Tradebot Configs) - https://discord.gg/ERUYUCZfWJ
+marshall's basement (programs, minecraft services, etc) - https://discord.gg/BEXZdrVTDz
 
 ## Disclaimer
 
