@@ -37,7 +37,7 @@ class NFTMaker(Cmd):
     x = input(Fore.BLUE + "\nAll Ralph Lauren items? -- Y or N: ")
     if x.lower() == "y":
       for item in items:
-        if "ralph lauren" in items[item][0].lower():
+        if "ralph lauren" in items[item][0].lowerl
           if str(item) in nftlist:
             pass
           else:
@@ -46,7 +46,7 @@ class NFTMaker(Cmd):
     with open("nftlist.txt", "w") as nftfile:
       nftfile.write(", ".join(nftlist))
 
-    print(Style.BRIGHT + Fore.WHITE + "\nFinished creating your NFTList, check the folder that the script was run in.")
+    print(Style.BRIGHT + Fore.WHITE + "\nFinished creating your NFT list, check the directory that the script is in.")
     return
 
 
