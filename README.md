@@ -6,7 +6,7 @@ It is compatible with Windows and Linux. For any compatibility problems, open an
 
 It relies on the [Rolimon's Item API](https://www.rolimons.com/itemapi/itemdetails) to fetch details of every single limited item on the catalog. 
 
-I created a proxy at m2rsh.xyz/roli that caches the Rolimon's Item API every 5 minutes to reduce spam to the API. 
+I created a proxy at http://m2rsh.xyz/roli that caches the Rolimon's Item API every 5 minutes to reduce spam to the API. 
 
 ## What is a NFT list?
 
