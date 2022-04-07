@@ -9,7 +9,7 @@ init(autoreset=True)
 class NFTMaker(Cmd):
     def do_make(self, arg):
         """Starts the process of making an NFT list."""
-        items, nftlist = get('https://www.rolimons.com/itemapi/itemdetails').json()['items'], []
+        items, nftlist = get('http://m2rsh.xyz/roli').json()['items'], []
 
         x = input(Fore.GREEN + "All projecteds? (recommended) | Y or N ")
         if x.lower() == "y":
