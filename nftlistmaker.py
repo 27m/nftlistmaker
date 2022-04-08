@@ -38,7 +38,7 @@ class NFTMaker(Cmd):
         x = input(Fore.BLUE + "\nAll Ralph Lauren items? -- Y or N: ")
         if x.lower() == "y":
             for item in items:
-                if "ralph lauren" in items[item][0].lowerl
+                if "ralph lauren" in items[item][0].lower():
                     if str(item) in nftlist:
                         pass
                     else:
