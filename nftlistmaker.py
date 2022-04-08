@@ -17,7 +17,7 @@ class NFTMaker(Cmd):
                 if items[item][7] == 1:
                     nftlist.append(item)
 
-        x = input(Fore.LIGHTYELLOW_EX + "\nAll unvalued (RAP) items? | Y or N: ")
+        x = input(Fore.LIGHTYELLOW_EX + "\nAll unvalued (RAP) items? (CAUTION: This is a lot of items) | Y or N: ")
         if x.lower() == "y":
             for item in items:
                 if items[item][3] == -1:
