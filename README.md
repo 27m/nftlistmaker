@@ -35,7 +35,7 @@ This program will eventually auto-update / replace your tradebot config's previo
 
 ## Discord 
 
-marshall's basement (programs, minecraft services, etc) - https://discord.gg/BEXZdrVTDz
+marshall's basement (programs, minecraft services, etc) - https://discord.gg/marshall
 
 ## Disclaimer
 
