@@ -1,6 +1,10 @@
 from cmd import Cmd
+import logging
+import time
 from requests import get
 from colorama import Fore, Style, init
+
+logging.basicConfig(filename='logs.txt', filemode='a', level=logging.DEBUG, format='[%(levelname)s] - {%(asctime)s} %(message)s')
 
 # Resets the color of the message after every message sent.
 init(autoreset=True)
@@ -9,15 +13,17 @@ init(autoreset=True)
 class NFTMaker(Cmd):
     def do_make(self, arg):
         """Starts the process of making an NFT list."""
-        items, nftlist = get('https://m2rsh.xyz/roli').json()['items'], []
 
-        x = input(Fore.GREEN + "All projecteds? (recommended) | Y or N ")
+        start1 = time.perf_counter()
+        items, nftlist = get('https://m2rsh.xyz/roli').json()['items'], []
+        end1 = time.perf_counter()
+        x = input("\n" + Style.BRIGHT + Fore.GREEN + "All projecteds? (recommended) | Y or N ")
         if x.lower() == "y":
             for item in items:
                 if items[item][7] == 1:
                     nftlist.append(item)
 
-        x = input(Fore.LIGHTYELLOW_EX + "\nAll unvalued (RAP) items? (CAUTION: This is a lot of items) | Y or N: ")
+        x = input(Style.BRIGHT + Fore.LIGHTYELLOW_EX + "\nAll unvalued (RAP) items? (CAUTION: This is a lot of items) | Y or N: ")
         if x.lower() == "y":
             for item in items:
                 if items[item][3] == -1:
@@ -26,7 +32,7 @@ class NFTMaker(Cmd):
                     else:
                         nftlist.append(item)
 
-        x = input(Fore.LIGHTMAGENTA_EX + "\nAll Gucci items? | Y or N: ")
+        x = input(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + "\nAll Gucci items? | Y or N: ")
         if x.lower() == "y":
             for item in items:
                 if "gucci" in items[item][0].lower():
@@ -35,7 +41,7 @@ class NFTMaker(Cmd):
                     else:
                         nftlist.append(item)
 
-        x = input(Fore.BLUE + "\nAll Ralph Lauren items? -- Y or N: ")
+        x = input(Style.BRIGHT + Fore.BLUE + "\nAll Ralph Lauren items? -- Y or N: ")
         if x.lower() == "y":
             for item in items:
                 if "ralph lauren" in items[item][0].lower():
@@ -43,12 +49,13 @@ class NFTMaker(Cmd):
                         pass
                     else:
                         nftlist.append(item)
-
+        start2 = time.perf_counter()
         with open("nftlist.txt", "w") as nftfile:
             nftfile.write(", ".join(nftlist))
+        end2 = time.perf_counter()
 
-        print(
-            Style.BRIGHT + Fore.WHITE + "\nFinished creating your NFT list, check the directory that the script is in.")
+        print(Style.BRIGHT + Fore.WHITE + "\nFinished creating your NFT list, check the directory that the script is in.")
+        logging.debug(f"Proxy fetch elapsed time {str(end1 - start1)[0:5]}s | List write elapsed time {str(end2 - start2)[0:6]}s.")
         return
 
     def do_quit(self, arg):
