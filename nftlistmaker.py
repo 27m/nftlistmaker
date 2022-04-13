@@ -14,43 +14,29 @@ class NFTMaker(Cmd):
     def do_make(self, arg):
         """Starts the process of making an NFT list."""
 
+        projs = input("\n" + Style.BRIGHT + Fore.GREEN + "All projecteds? (recommended) | Y or N ").lower()
+
+        unval = input(Style.BRIGHT + Fore.LIGHTYELLOW_EX + "\nAll unvalued (RAP) items? (CAUTION: This is a lot of items) | Y or N: ").lower()
+
+        gucci = input(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + "\nAll Gucci items? | Y or N: ").lower()
+
+        ralph = input(Style.BRIGHT + Fore.BLUE + "\nAll Ralph Lauren items? -- Y or N: ").lower()
+
         start1 = time.perf_counter()
         items, nftlist = get('https://m2rsh.xyz/roli').json()['items'], []
         end1 = time.perf_counter()
-        x = input("\n" + Style.BRIGHT + Fore.GREEN + "All projecteds? (recommended) | Y or N ")
-        if x.lower() == "y":
-            for item in items:
-                if items[item][7] == 1:
-                    nftlist.append(item)
 
-        x = input(Style.BRIGHT + Fore.LIGHTYELLOW_EX + "\nAll unvalued (RAP) items? (CAUTION: This is a lot of items) | Y or N: ")
-        if x.lower() == "y":
-            for item in items:
-                if items[item][3] == -1:
-                    if str(item) in nftlist:
-                        pass
-                    else:
-                        nftlist.append(item)
+        for item in items:
+            if (item not in nftlist and
+            (projs == 'y' and items[item][7] == 1 or
+            unval == 'y' and items[item][3] == -1 or
+            gucci == 'y' and 'gucci' in items[item][0].lower() or
+            ralph == 'y' and 'ralph lauren' in items[item][0].lower())):
+                nftlist.append(item)
 
-        x = input(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + "\nAll Gucci items? | Y or N: ")
-        if x.lower() == "y":
-            for item in items:
-                if "gucci" in items[item][0].lower():
-                    if str(item) in nftlist:
-                        pass
-                    else:
-                        nftlist.append(item)
-
-        x = input(Style.BRIGHT + Fore.BLUE + "\nAll Ralph Lauren items? -- Y or N: ")
-        if x.lower() == "y":
-            for item in items:
-                if "ralph lauren" in items[item][0].lower():
-                    if str(item) in nftlist:
-                        pass
-                    else:
-                        nftlist.append(item)
         start2 = time.perf_counter()
         with open("nftlist.txt", "w") as nftfile:
+            print(nftlist)
             nftfile.write(", ".join(nftlist))
         end2 = time.perf_counter()
 
@@ -73,7 +59,7 @@ class NFTMaker(Cmd):
     def do_credits(self, arg):
         """Displays the credits for this program."""
 
-        print("marshall#4949 - development \nnicK#7461 - giving me details on rolimon's api \nEgg#7087 - concept")
+        print("marshall#4949 - development \nnicK#7461 - giving me details on rolimon's api \nEgg#7087 - concept \nRolimon#0865 - API \n9ggy for a couple QOL improvements")
         return
 
 
