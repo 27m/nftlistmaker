@@ -45,7 +45,7 @@ I am not responsible for your use of this program. ~~Rolimon's API. This program
 
 Thank you Rolimon for offering this API!
 
-## Credits 
+## Credits / Contributions
 
 + marshall#4949 - development
 + nicK#7461 - giving me details on rolimon's api
