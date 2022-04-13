@@ -59,7 +59,7 @@ class NFTMaker(Cmd):
     def do_credits(self, arg):
         """Displays the credits for this program."""
 
-        print("marshall#4949 - development \nnicK#7461 - giving me details on rolimon's api \nEgg#7087 - concept \nRolimon#0865 - API \n9ggy for a couple QOL improvements")
+        print("marshall#4949 - development \nnicK#7461 - giving me details on rolimon's api \nEgg#7087 - concept \nRolimon#0865 - API \n9ggy for a couple QOL improvements \ncanerom#9540 for readability improvements")
         return
 
 
