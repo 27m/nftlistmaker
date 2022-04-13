@@ -36,7 +36,6 @@ class NFTMaker(Cmd):
 
         start2 = time.perf_counter()
         with open("nftlist.txt", "w") as nftfile:
-            print(nftlist)
             nftfile.write(", ".join(nftlist))
         end2 = time.perf_counter()
 
