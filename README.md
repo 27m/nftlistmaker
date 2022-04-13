@@ -6,7 +6,7 @@ It is compatible with Windows and Linux. For any compatibility problems, open an
 
 It relies on the [Rolimon's Item API](https://www.rolimons.com/itemapi/itemdetails) to fetch details of every single limited item on the catalog. 
 
-I created a proxy at https://m2rsh.xyz/roli that caches the Rolimon's Item API every 5 minutes to reduce spam to the API. 
+I created a proxy at https://m2rsh.xyz/roli that caches the Rolimon's Item API every 5 minutes to reduce spam to the API. Please play nice with it.
 
 ## What is a NFT list?
 
@@ -39,7 +39,9 @@ marshall's basement (programs, minecraft services, etc) - https://discord.gg/mar
 
 ## Disclaimer
 
-I am not responsible for your use of the Rolimon's API. This program should not be used to spam / abuse the API.
+I am not responsible for your use of this program. ~~Rolimon's API. This program should not be used to spam / abuse the API.~~
+
+(The program utilizes my proxy now, so no API abuse will occur!)
 
 Thank you Rolimon for offering this API!
 
